@@ -21,7 +21,7 @@ class PlanService:
         total_distance = self.__get_total_distance_covered(trip_details)
 
         return {
-            "total_distance": total_distance,
+            "total_distance": "{:.2f}".format(total_distance),
             "trip_details": trip_details
         }
 
